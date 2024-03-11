@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+/* layout서식 header, main, footer */
+
+header{width:100%;}
+
+
+
+
+
+/* login 페이지의 레이아웃 */
+main{}
+
+.l_01{
+    width:1025px;
+    margin:0px auto;}
+
+.con01{
+    width:1025px;
+    height: 350px;
+    background: #ffff00;
+    margin:0px auto;}
+
+.con02{
+    width:1025px;
+    height: 350px;
+    background: rgb(255, 102, 0);
+    margin:0px auto;}
+
+
+/* login 페이지 footer 레이아웃 */
+footer{}
+

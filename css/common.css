@@ -1,0 +1,163 @@
+@charset "utf-8";
+
+/* 놀다갑성제주 */
+
+/* 공통서식 */
+ul{list-style: none;}
+input{outline:none;}
+a{text-decoration: none; color: #222;}
+body,textarea{font-family:'Noto Sans KR', arial, sans-serif;
+    overflow-x: hidden;
+    font-size: 14px;
+    color: #333;}
+h1{position: relative;
+    z-index: 100;
+}
+.h_inner h1 img{
+    width:191.58px;
+    height:40px;
+display: inline-block;}
+h2{font-size: 20px;
+    color: #333;
+    font-weight: 400;}
+nav{font-size:17px;
+    color: #333;
+    font-weight: 500;}
+
+    /* 헤더영역 */
+header{background-color: #fff;height: 90px;
+    border-bottom: 2px solid orange;
+    z-index: 9000;}
+
+/* 가운데 및 가로 정렬 */
+.h_inner{
+    width: 1280px;
+    height: 90px;
+    background-color: #fff;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    position: relative;}
+
+
+/* hover시 배경색상 */
+.wrap{height: 90px;width: 100%;}
+
+.wrap:hover{background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 30%, rgba(0, 0, 0, 0.265) 30%);
+    height: 300px;
+    z-index: 8999;
+    position: absolute;}
+
+/* 내비게이션서식 */
+.gnb{width: 533px;}
+
+.gnb>ul{display: flex;
+justify-content: space-around;}
+
+.gnb>ul>li>a{font-size:17px;
+    color: #333;
+    font-weight: 500;
+    line-height: 90px;}
+
+    /* 헤더 우측 마이페이지 */
+    .mypage{position: absolute; right: 10px;
+        top:5px;padding: 0px 45px;}
+    
+    .user{width: 20px;height: 20px;}
+
+    /* 2단 내비게이션 */
+
+.gnb>ul>li:hover .sub{
+        height: 500px;
+        line-height: 50px;
+        display: block;
+        top:90px;}
+
+.sub{position: absolute;
+    display: none;}
+    
+.sub>li>a{font-size: 16px; color: #fff;}
+
+.sub>li:hover>a{color:  #F28241; font-weight: 800;}
+
+/* 검색서식 */
+
+.h_inner legend{display: none;}
+
+header fieldset{width: 400px;}
+
+#search_box{width: 220px; 
+    border: none;
+    border-bottom: 1px solid #333;}
+
+label[for='search_box']>img{width: 20px;
+    height: 20px;
+    transform: translateY(8px);}
+
+
+
+
+
+/*푸터영역  */
+    
+footer{
+    width: 100%;
+    height: 220px;
+    color: #fff;
+    background: #8F8F8F;}
+footer a{color: #fff;}
+
+footer address{font-style: normal;}
+
+/* 푸터배경색 */
+.f_inner{width: 1280px;
+    height: 220px;
+    margin: 0px  auto;
+    box-sizing: border-box;
+    padding: 20px;}
+
+/* 푸터그리드 */
+.f_grid{display: grid;
+    grid-template-columns: repeat(3,auto);
+    padding-bottom: 30px;
+}
+
+/* 푸터로고 */
+.f_logo{ 
+    width: 123px; height: 30px; display: block;
+    }
+.f_logo > a > img{width: 100%;}
+
+
+/* 푸터 개인정보 내비게이션 링크 */
+.f_link{display: flex; justify-content: center;}
+.f_link > li{padding: 0px 20px; line-height: 25px; height: 25px;}
+.f_link > li:first-child{border-right: 1px solid#fff; padding-right: 20px;}
+.f_link > li:nth-child(2){border-right: 1px solid#fff; padding-right: 20px;}
+.f_link > li:nth-child(3){border-right: 1px solid#fff; padding-right: 20px;}
+.f_link > li:nth-child(4){border-right: 1px solid#fff; padding-right: 20px;}
+
+/* SNS 아이콘 */
+.sns_wrap{
+    display: flex;
+    justify-content: right;
+}
+.sns_wrap > li{
+    width: 42px;
+    padding-left: 22px;
+
+}
+.sns_wrap > li > a > img{width: 100%; right: 0px;}
+
+
+
+
+/* 사이트맵 이미지 링크 */
+.img_wrap{
+    float: right;}
+.img_wrap > li{padding: 0px 10px;}
+
+
+address > p{line-height: 25px;}

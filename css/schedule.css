@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+.hashtag{font-size: 13px;
+color: rgb(78,180,191);}
+
+main{width: 1280px; height: 1061px;
+    margin: 0px auto;
+    position: relative;
+    display: flex;} 
+
+/* 왼쪽 북마크 */
+main>.bookmark{width: 162px;
+    position: absolute;
+    top:83px;
+    text-align: center;
+    margin-left: 10px;}
+
+    /* 북마크 제목 나의 북마크 */
+main>.bookmark>h3{width: 88px; 
+    height: 39px; 
+    line-height:39px;
+    border-top: 1px solid #F28241;
+    border-bottom: 1px solid #F28241;
+    margin:0px auto 46px auto;}
+
+    /* 북마크 사진 */
+main>.bookmark>ul>li>a>img:nth-child(2n+1){width: 162px; 
+    height: 97px;
+    border-radius:10px;}
+
+    /* 북마크 사진hover시 효과 */
+main>.bookmark>ul>li{overflow: hidden;}
+main>.bookmark>ul>li:nth-child(2n+1)>a>img:hover{transform: scale(1.2);}
+
+    /*북마크  제목과 내용*/
+main>.bookmark>ul>li:nth-child(2n){
+    border-bottom: 1px solid #F28241;
+    font-size:16px;
+    font-weight:400; 
+    text-align: center;
+    margin-bottom:35px}
+
+    /* 북마크 해시태그 */
+    main>.bookmark>ul>li:nth-child(2n)>a{padding: 10px 20px;
+        display: block;}
+
+    /* 중앙 메인 일정 */
+main>.schedule>h3{display: none;}
+main>.schedule{width: 1096px; 
+        height:683px;
+        position: absolute;
+        left: 261px ; top: 50px;}
+
+        /* 버튼들 */
+    main>.schedule>.btn>h4{display: none;}
+
+    /* 버튼 가로정렬 및 위치 잡기 */
+    main>.schedule>.btn>ul{display: flex;
+                justify-content: start;
+                width: 855px; 
+                height: 58px;
+                margin: 0px 82px 99px 32px;}
+
+    /* 버튼 속성 */
+    main>.schedule>.btn>ul>li>input{height: 58px;
+                padding: 16px 46px;
+                border-left:none;
+                border-bottom:none;
+                border-top:none;
+                border-right:1px solid #F28241;
+                background-color: rgba(242,130,65,0.1);
+            cursor:pointer;
+            font-size: 16px;
+        font-weight: 400;}
+
+        /* 버튼 hover시 속성 */
+main>.schedule>.btn>ul>li:hover>input{font-weight: 500;
+    color: #fff;
+    background-color: rgba(242,130,65,0.8);
+    border: none;}
+
+    /* 버튼 끝에 둥글게 만들기 */
+        main>.schedule>.btn>ul>li:first-child>input{border-top-left-radius: 10px;}
+        main>.schedule>.btn>ul>li:first-child>input{border-bottom-left-radius: 10px;}
+        main>.schedule>.btn>ul>li:last-child>input{border-top-right-radius: 10px;}
+        main>.schedule>.btn>ul>li:last-child>input{border-bottom-right-radius: 10px;}
+        main>.schedule>.btn>ul>li>.no_border{border-right: none;} 
+
+
+    /* 미래일정 과거일정들 */
+main>.schedule>.schedule_inner>h4{display: none;}
+
+    /* 일정들 가로정렬 */
+main>.schedule>.schedule_inner{clear: both;
+        display: flex; 
+        justify-content:space-between;
+        position: relative;}
+
+    /* 과거일정 두개만 연한색상으로 변경 */
+.schedule_inner>div:nth-child(2){background-color: rgba(145,205,242,1)}
+
+    /* 일정 기본속성 */
+.schedule_inner>div{width: 322px; 
+    height: 529px;
+    background-color: rgba(145,205,242,0.5);
+    border-radius: 30px;
+    position: relative;}
+
+    /* 해시태그 */
+.hashtag{display:inline-block;
+    background-color: #fff;
+    padding: 9px 20px;
+    border-radius: 20px;
+    position: absolute;}
+
+    /* 일정들 속 내용들 자리배치 (복잡함)*/ 
+    .schedule_inner>div>p{position: absolute;top: 35px;left: 19px;}
+    .schedule_inner>div>h2{position: absolute;top: 100px;left: 28px;}
+    .schedule_inner>div>a:nth-child(4){top: 230px;left: 20px;}
+    .schedule_inner>div>a:nth-child(5){top: 230px;left: 146px;}
+    .schedule_inner>div>a:nth-child(6){top: 286px;left: 53px;}
+    .schedule_inner>div>a:nth-child(7){top: 286px;left: 180px;}
+
+    /* 사용된 아이콘 크기 */
+.icon{position: absolute; 
+    top:30px; 
+    right :30px;
+    width: 30px;
+    height: 30px;}
+.icon_2{position: absolute; 
+    bottom:39px; 
+    left:34px;
+    width: 65px;
+    height: 65px;}
+
+/* 하단 예약창들 */
+main>.reserve>h3{display: none;}
+
+/* 예약창에 큰 틀 */
+main>.reserve{width: 960px; 
+    height: 168px;
+    position: absolute;
+    bottom: 49px; 
+    right: 11px;
+    margin-right: 10px;}
+
+    /* 예약내역가로정렬 */
+main>.reserve>ul{display: flex;
+    justify-content:space-between;}
+
+    /* 가로정렬한 각 영역에 준 속성 */
+main>.reserve>ul>li>a{display: block;
+    width: 269px; 
+    height: 168px;position: relative;}
+
+    /* 이미지 크기 */
+main>.reserve>ul>li>a>img{width: 269px; 
+    height: 168px;
+    border-radius: 15px;}
+
+    /* 검정 배경과 글씨 */
+main>.reserve>ul>li>a>p{position: absolute; 
+    left: 0px; 
+    bottom: 0px;
+    color: #fff;
+    background-color: rgba(0,0,0,0.6);
+    width:93%;
+    padding: 10px;
+    border-bottom-left-radius: 15px; 
+    border-bottom-right-radius:15px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;}
+
+    /* hover시 글씨에 적용된 검정 배경이 꽉 채워줌 */
+main>.reserve>ul>li>a:hover>p{background-color: rgba(0,0,0,0.6);
+    width:93%;height: 88%;
+    padding: 10px;
+    border-bottom-left-radius: 15px; 
+    border-top-left-radius: 15px; 
+    border-bottom-right-radius:15px;
+    border-top-right-radius:15px;
+    transition: 0.3s;}

@@ -1,0 +1,182 @@
+@charset "utf-8";
+
+*{scroll-behavior: smooth;}
+
+
+
+/* main */
+
+main h2{text-align: center; line-height: 130px;}
+.h2_none{display: none;}
+
+
+/* 메인이미지배너 */
+main div > a { display: inline-block;}
+
+
+.m_banner{
+    width: 1920px;
+    background: rgb(73, 129, 219);
+    position: relative;
+    margin: 0px  auto;
+}
+
+.mySwiper{position: relative; height: 598px;}
+
+
+/* 위치별여행지 */
+.m_con01{
+    width: 1260px;
+    margin: 0px auto;
+}
+.m_con01  img{object-fit: cover; position: absolute; width: 100%;}
+.con01_map{width: 1258px; height: 280px; margin: 0px auto; display: flex; justify-content: space-between;}
+.con01_map > a{width: 269px; height: 150px; position: relative;}
+.con01_map > a:hover{ transform: scale(1.1); transition: 0.5s;}
+
+.con01_map > a:hover p{color: rgb(242,130,65);}
+.con01_map > a p{margin-top: 180px; text-align: center;}
+.con01_map > a p:hover{color: rgb(242,130,65);}
+
+
+
+
+
+
+/* 숙소.렌트 */
+.m_con02{
+    width: 100%;
+    height: 880px;
+    background: rgba(78,180,191,0.1);
+}
+.h2_center{width: 1195px; margin: 0px auto;}
+.con02_wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.con02_wrap  img{object-fit: cover; width: 100%; }
+
+.con02_wrap p{
+    width: 100%;
+    padding: 25px 0px;
+    line-height: 25px; 
+    color: #fff; 
+    font-size: 18px; 
+    font-weight: 600; 
+    position: absolute; 
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-indent: 20px;
+    bottom: 2px;
+    }
+.con02_wrap p:hover{
+    display: block;
+    padding-top: 320px;
+    transition: 0.5s;
+}
+
+.house_banner{width: 584px ; height: 204px;  position: relative;}
+.house_banner  li{
+    margin-bottom: 22px; 
+    position: relative; overflow: hidden;
+    border-radius: 20px;
+    }
+
+
+
+.car_banner{width: 584px ; height: 648px; position: relative;}
+.car_banner  li{
+    margin-bottom: 25px; 
+    position: relative; overflow: hidden;
+    border-radius: 20px;
+
+}
+
+
+
+
+
+
+/* 여행꿀팁 */
+.m_con03{ 
+    width: 1237px;
+    height: 473px;
+    margin: 0px auto;
+}
+.con03_banner{
+    width:1237px; height: 282px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.con03_banner > a{ width: 400px; height: 282px; position: relative; overflow: hidden; border-radius: 15px;}
+.con03_banner  img{object-fit: cover; position: absolute; width: 100%; }
+.con03_banner  img:hover{transform: scale(1.1); transition: 0.5s; }
+
+
+
+
+
+
+
+
+
+
+/* 공지사항.이벤트 묶음 */
+.m_con04{
+    width: 100%;
+    height: 358px;
+    background: rgba(242,130,65,0.1);
+}
+.h2_left{text-align: left; padding-left: 10px;}
+
+.m_con04 > .end_wrap{
+    width: 1237px;
+    height: 473px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 공지사항 */
+.notice{
+    width: 561px; height: 358px;
+}
+
+.n_table{
+    width: 561px; 
+    border-top: 1px solid #333; 
+    border-bottom: 1px solid #333;}
+.n_table td{
+    padding: 16px 30px;
+}
+.n_table  td > a:hover{
+    color: rgb(242,130,65);
+}
+
+
+
+
+/* 이벤트 */
+.event{
+    width: 561px; height: 358px;
+}
+
+
+
+
+
+/* top 버튼 */
+.top_btn{
+    width: 70px; height: 70px;
+        border-radius: 50%;
+        display: block;
+        line-height: 70px;
+        text-align: center;
+        position: fixed;
+        /* 오른쪽하단에 고정 */
+        right: 230px; bottom: 100px;
+        border: 1px solid rgb(242,130,65);
+        background:  rgba(255, 255, 255,0.5);
+    }

@@ -1,0 +1,33 @@
+@charset "utf-8";
+
+
+
+.form_wrap{width: 555px; margin: 60px auto;}
+
+.form_wrap  textarea{
+    width: 555px;
+}
+fieldset > h2{text-align: center; margin-bottom: 90px;}
+.form_wrap ul > li{margin: 20px 0px;}
+.form_wrap ul  > li > p{margin-top: 15px; margin-bottom: 45px;}
+.form_wrap ul > li  textarea{
+    margin-top: 15px; 
+    margin-bottom: 20px;
+    border-color: #7e7b7b;
+    border-radius: 3px;
+}
+.form_wrap ul > li > ul{text-indent: 30px;}
+
+
+.color01{color: rgb(255, 0, 0);}
+
+.button01{
+    width: 400px;
+    height: 50px;
+    border: none;
+    background: rgb(242,130,65);
+    color: #fff;
+    display: block;
+    margin: 50px auto;
+    cursor: pointer;
+}
